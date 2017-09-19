@@ -5,6 +5,10 @@
     "node": ">=6",
     "npm": ">=3.8"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkeadg/boosh-react-cms.git"
+  },
   "dependencies": {    
   },
   "devDependencies": {
