@@ -1,7 +1,6 @@
 {
   "name": "boosh-react-cms",
   "version": "1.0.0",
-  "private": true,
   "engines": {
     "node": ">=6",
     "npm": ">=3.8"
