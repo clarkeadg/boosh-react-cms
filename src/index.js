@@ -14,17 +14,17 @@ const CmsPage             = require('./Containers/Page');
 const CmsRoutes           = require('./routes');
 
 module.exports = {
-  CmsActions:             CmsActions,
-  CmsSaga:                CmsSaga,
-  GetCmsAppSaga:          GetCmsAppSaga,
-  GetCmsPageSaga:         GetCmsPageSaga,
+  CmsActions:             CmsActions.default,
+  CmsSaga:                CmsSaga.default,
+  GetCmsAppSaga:          GetCmsAppSaga.default,
+  GetCmsPageSaga:         GetCmsPageSaga.default,
   GetCmsMarkdownSaga:     GetCmsMarkdownSaga,
   getApp:                 CmsSelector.getApp,
-  CmsApi:                 CmsApi,
+  CmsApi:                 CmsApi.default,
   CmsAppReducer:          CmsAppReducer.default,
   CmsPageReducer:         CmsPageReducer.default,
   CmsMarkdownReducer:     CmsMarkdownReducer.default,
-  CmsApp:                 CmsApp,
-  CmsPage:                CmsPage,
-  CmsRoutes:              CmsRoutes
+  CmsApp:                 CmsApp.default,
+  CmsPage:                CmsPage.default,
+  CmsRoutes:              CmsRoutes.default
 }
