@@ -25,7 +25,7 @@ const create = (baseURL = apiURL) => {
     baseURL,
     // here are some default headers
     headers: {
-      //'Cache-Control': 'no-cache'
+      'Cache-Control': 'no-cache'
     },
     // 10 second timeout...
     timeout: 10000
@@ -67,7 +67,7 @@ const create = (baseURL = apiURL) => {
   }
 
   const getCmsMarkdown = (appId, pageId) => {
-    return fetch(apiURL+appId+'/pages/'+pageId+'/markdown.md')
+    return fetch(CmsApi.getBaseURL()+appId+'/pages/'+pageId+'/markdown.md')
       .then(res => Promise.resolve(res.text()))
   }
 
