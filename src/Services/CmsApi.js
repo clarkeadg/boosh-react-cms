@@ -25,7 +25,7 @@ const create = (baseURL = apiURL) => {
     baseURL,
     // here are some default headers
     headers: {
-      'Cache-Control': 'no-cache'
+      //'Cache-Control': 'no-cache'
     },
     // 10 second timeout...
     timeout: 10000
